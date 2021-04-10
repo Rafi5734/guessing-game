@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gussing a number</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="gussing game.css" />
+
+</head>
+
+<body>
+    <section class="gussing">
+        <button type="button" id="again" class="btn btn-light" style="font-weight: bold; font-size: 40px">
+        Again!
+      </button>
+
+        <p id="numbering">Put your number between 1 to 20 numbers</p>
+        <h1 id="number">Guess My Number</h1>
+        <hr id="horizon" />
+        <h3 id="question">?</h3>
+        <div class="container-flueid">
+            <div class="row">
+                <div class="col-sm-6 bg-none">
+                    <div class="container mt-3">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-primary" type="button" id="check">
+                    Check!
+                  </button>
+                            </div>
+                            <br />
+                            <div class="input-section">
+                                <input type="text" class="form-control" placeholder="The guessing number is" id="input" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guessing-number" id="guessing-number">
+                        <p>Start guessing...</p>
+                    </div>
+                    <div class="col-sm-6 bg-none" id="second-row">
+                        <p id="deed" class="message">
+                            Deed Remains:</p><span id="gussing-score"> 20</span>
+
+                        <p id="highscore">
+                            Highscore is:</p><span id="scoreHigh">0</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
